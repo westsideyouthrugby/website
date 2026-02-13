@@ -3,16 +3,11 @@ languageCode: en-us
 title: Westside Youth Rugby
 theme: PaperMod
 
-pagination:
-  pagerSize: 10
-
 params:
   env: production
   defaultTheme: auto
   showReadingTime: false
   showShareButtons: false
-  showBreadCrumbs: true
-  showPostNavLinks: true
   homeInfoParams:
     Title: Westside Youth Rugby
     Content: >
@@ -20,30 +15,6 @@ params:
   socialIcons:
     - name: email
       url: "mailto:info@westsideyouth.rugby"
-
-menu:
-  main:
-    - identifier: home
-      name: Home
-      url: /
-      weight: 10
-    - identifier: about
-      name: About
-      url: /about/
-      weight: 20
-    - identifier: news
-      name: News
-      url: /news/
-      weight: 30
-    - identifier: contact
-      name: Contact
-      url: /contact/
-      weight: 40
-
-outputs:
-  home:
-    - HTML
-    - RSS
 
 markup:
   goldmark:

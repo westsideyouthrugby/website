@@ -20,7 +20,16 @@ defaults:
     shell: bash
 
 jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: j178/prek-action@v1
+        with:
+          extra-args: --all-files
+
   build:
+    needs: lint
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: "0.154.5"
@@ -31,7 +40,7 @@ jobs:
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb
 
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           submodules: recursive
 
