@@ -12,7 +12,8 @@ params:
     enabled: true
     title: Westside Youth Rugby
     subtitle: |
-      Youth rugby in Portland's Westside community. Building character, teamwork, and fitness through rugby.
+      Youth rugby in Portland's Westside community. Building character, teamwork,
+      and fitness through rugby.
 
       Contact: [info@westsideyouth.rugby](mailto:info@westsideyouth.rugby)
     imageUrl: img/logo-placeholder.svg
