@@ -8,13 +8,20 @@ params:
   defaultTheme: auto
   showReadingTime: false
   showShareButtons: false
-  homeInfoParams:
-    Title: Westside Youth Rugby
-    Content: >
+  profileMode:
+    enabled: true
+    title: Westside Youth Rugby
+    subtitle: |
       Youth rugby in Portland's Westside community. Building character, teamwork, and fitness through rugby.
-  socialIcons:
-    - name: email
-      url: "mailto:info@westsideyouth.rugby"
+
+      Contact: [info@westsideyouth.rugby](mailto:info@westsideyouth.rugby)
+    imageUrl: img/logo-placeholder.svg
+    imageTitle: Westside Youth Rugby
+    imageWidth: 200
+    imageHeight: 200
+    buttons:
+      - name: Register for Flag Rugby
+        url: "https://rugbyoregon.com/"
 
 markup:
   goldmark:

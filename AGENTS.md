@@ -15,31 +15,16 @@
 
 ```
 content/
-  _index.md          # homepage (front matter only, PaperMod homeInfoParams drives display)
-  about.md           # about page
-  contact.md         # contact page
-  news/
-    _index.md        # news section listing
-    YYYY-MM-DD-*.md  # news posts
+  _index.md          # homepage (front matter only, profileMode drives display)
 ```
 
-## Adding a News Post
-
-Create `content/news/YYYY-MM-DD-slug.md`:
-
-```markdown
----
-title: "Post Title"
-date: YYYY-MM-DD
-summary: "Brief description."
----
-
-Post body here.
-```
+This is a single-page site. The homepage is controlled entirely by `profileMode` in `hugo.yaml`. The `_index.md` file only carries SEO metadata (`description`).
 
 ## Configuration
 
 - `hugo.yaml` — site config (theme, menus, PaperMod params)
+- Homepage uses PaperMod `profileMode` (image, title, subtitle, buttons)
+- Custom CSS overrides live in `assets/css/extended/custom.css`
 - Do NOT edit files in `themes/PaperMod/` directly
 
 ## Deployment
@@ -48,4 +33,12 @@ Push to `main` triggers `.github/workflows/hugo.yaml` which builds and deploys t
 
 ## Images
 
-Place images in `static/img/`. Reference in content as `/img/filename.png`.
+Place images in `static/img/`. Reference in content or config as `/img/filename.png`.
+
+The site logo is `static/img/logo-placeholder.svg` — replace with an actual logo when available.
+
+## Local Testing
+
+1. Run `hugo server` and open `http://localhost:1313/`
+2. Verify: logo centered, title displayed, subtitle with contact link, register button links to rugbyoregon.com
+3. Run `hugo --minify` to confirm production build succeeds with no errors

@@ -1,0 +1,7 @@
+.profile_inner img {
+  border-radius: 0;
+}
+
+.profile_inner > span {
+  display: block;
+}
