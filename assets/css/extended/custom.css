@@ -4,4 +4,6 @@
 
 .profile_inner > span {
   display: block;
+  text-align: left;
+  margin-top: 2em;
 }

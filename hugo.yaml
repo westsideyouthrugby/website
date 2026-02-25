@@ -12,17 +12,19 @@ params:
     enabled: true
     title: Westside Youth Rugby
     subtitle: |
-      Youth rugby in Portland's Westside community.\
-      Building character, teamwork, and fitness through rugby.
+      **3-6th Grade Co-Ed Flag Rugby**
 
-      Contact: [info@westsideyouth.rugby](mailto:info@westsideyouth.rugby)
+      **Practice:** Mondays & Wednesdays, 6:00–7:30 pm @ Chapman Elementary\
+      **Community Touch:** Sundays 1:30–3:30 pm @ Chapman Elementary
+
+      New to rugby? Perfect. We welcome players of all skill levels to learn the game, build confidence, and be part of a supportive team.
+
+      Contact: [jasonbullier@gmail.com](mailto:jasonbullier@gmail.com)
     imageUrl: img/logo-placeholder.svg
     imageTitle: Westside Youth Rugby
     imageWidth: 200
     imageHeight: 200
-    buttons:
-      - name: Register for Flag Rugby
-        url: "https://rugbyoregon.com/"
+    buttons: []
 
 markup:
   goldmark:
