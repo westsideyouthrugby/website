@@ -1,6 +1,6 @@
 baseURL: https://westsideyouthrugby.github.io/website/
 languageCode: en-us
-title: Westside Youth Rugby
+title: Westside Youth Rugby Club
 theme: PaperMod
 
 params:
@@ -10,7 +10,7 @@ params:
   showShareButtons: false
   profileMode:
     enabled: true
-    title: Westside Youth Rugby
+    title: Westside Youth Rugby Club Club
     subtitle: |
       **3-6th Grade Co-Ed Flag Rugby**
 
@@ -20,10 +20,10 @@ params:
       New to rugby? Perfect. We welcome players of all skill levels to learn the game, build confidence, and be part of a supportive team.
 
       Contact: [jasonbullier@gmail.com](mailto:jasonbullier@gmail.com)
-    imageUrl: img/logo-placeholder.svg
-    imageTitle: Westside Youth Rugby
-    imageWidth: 200
-    imageHeight: 200
+    imageUrl: img/logo.png
+    imageTitle: Westside Youth Rugby Club
+    imageWidth: 264
+    imageHeight: 264
     buttons: []
 
 markup:
