@@ -12,21 +12,20 @@ params:
     enabled: true
     title: Westside Youth Rugby Club Club
     subtitle: |
-      **3-6th Grade Co-Ed Flag Rugby**
+      **3rd-6th Grade Co-Ed Flag Rugby**
 
       **Practice:** Mondays & Wednesdays, 6:00–7:30 pm @ Chapman Elementary\
-      **Community Touch:** Sundays 1:30–3:30 pm @ Chapman Elementary
-
+      **Community Touch:** Sundays 1:30–3:30 pm @ Chapman Elementary\
       New to rugby? Perfect. We welcome players of all skill levels to learn the game, build confidence, and be part of a supportive team.
 
       Contact: [jasonbullier@gmail.com](mailto:jasonbullier@gmail.com)
     imageUrl: img/logo.png
     imageTitle: Westside Youth Rugby Club
-    imageWidth: 264
-    imageHeight: 264
+    imageWidth: 500
+    imageHeight: 500
     buttons: []
 
 markup:
   goldmark:
+    unsafe: false
     renderer:
-      unsafe: false
