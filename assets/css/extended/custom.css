@@ -1,5 +1,6 @@
 .profile_inner img {
   border-radius: 0;
+  height: auto;
 }
 
 .profile_inner h1 {
