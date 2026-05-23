@@ -24,6 +24,11 @@ params:
     imageWidth: 500
     imageHeight: 500
     buttons: []
+  socialIcons:
+    - name: instagram
+      url: "https://www.instagram.com/lhsrugby"
+    - name: email
+      url: "mailto:jasonbullier@gmail.com"
 
 markup:
   goldmark:
