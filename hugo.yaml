@@ -26,6 +26,8 @@ params:
     buttons:
       - name: Rugby Oregon
         url: "https://www.rugbyoregon.com"
+      - name: Photos
+        url: /photos/
   socialIcons:
     - name: instagram
       url: "https://www.instagram.com/lhsrugby"
