@@ -23,7 +23,9 @@ params:
     imageTitle: Westside Youth Rugby Club
     imageWidth: 500
     imageHeight: 500
-    buttons: []
+    buttons:
+      - name: Rugby Oregon
+        url: "https://www.rugbyoregon.com"
   socialIcons:
     - name: instagram
       url: "https://www.instagram.com/lhsrugby"
