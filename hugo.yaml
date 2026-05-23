@@ -30,6 +30,9 @@ params:
     - name: email
       url: "mailto:jasonbullier@gmail.com"
 
+disableKinds:
+  - RSS
+
 markup:
   goldmark:
     unsafe: false
