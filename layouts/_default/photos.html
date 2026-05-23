@@ -1,0 +1,10 @@
+{{ define "main" }}
+<h1 class="page-title">{{ .Title }}</h1>
+<div class="photo-gallery">
+  {{- range $i := seq 1 9 }}
+  <a href="/img/photos/photo-{{ printf "%02d" $i }}.jpg" target="_blank" rel="noopener">
+    <img src="/img/photos/photo-{{ printf "%02d" $i }}.jpg" alt="Youth rugby action" loading="lazy">
+  </a>
+  {{- end }}
+</div>
+{{ end }}
