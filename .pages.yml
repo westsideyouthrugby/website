@@ -7,10 +7,6 @@ media:
     label: Photos
     input: static/img/photos
     output: /img/photos
-  - name: logo
-    label: Logo
-    input: static/img
-    output: img
 
 content:
   - name: homepage
@@ -34,10 +30,8 @@ content:
                 label: Subtitle
                 type: text
               - name: imageUrl
-                label: Logo
-                type: image
-                options:
-                  media: logo
+                label: Logo path
+                type: string
               - name: buttons
                 label: Buttons
                 type: object
