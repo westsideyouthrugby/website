@@ -1,10 +1,14 @@
 {{ define "main" }}
 <h1 class="page-title">{{ .Title }}</h1>
 <div class="photo-gallery">
-  {{- range $i := seq 1 9 }}
-  <a href="/img/photos/photo-{{ printf "%02d" $i }}.jpg" target="_blank" rel="noopener">
-    <img src="/img/photos/photo-{{ printf "%02d" $i }}.jpg" alt="Youth rugby action" loading="lazy">
+  {{- range sort (resources.Match "photos/*") "Name" }}
+  {{- if in (slice "image/jpeg" "image/png" "image/webp") .MediaType.Type }}
+  {{- $thumb := .Resize "800x q80" }}
+  {{- $full := .Resize "1800x q80" }}
+  <a href="{{ $full.RelPermalink }}" target="_blank" rel="noopener">
+    <img src="{{ $thumb.RelPermalink }}" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}" alt="Youth rugby action" loading="lazy">
   </a>
+  {{- end }}
   {{- end }}
 </div>
 {{ end }}
