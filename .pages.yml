@@ -1,0 +1,63 @@
+settings:
+  content:
+    merge: true
+
+media:
+  - name: photos
+    label: Photos
+    input: static/img/photos
+    output: /img/photos
+  - name: logo
+    label: Logo
+    input: static/img
+    output: img
+
+content:
+  - name: homepage
+    label: Homepage
+    type: file
+    path: hugo.yaml
+    format: yaml
+    fields:
+      - name: params
+        label: Params
+        type: object
+        fields:
+          - name: profileMode
+            label: Homepage
+            type: object
+            fields:
+              - name: title
+                label: Title
+                type: string
+              - name: subtitle
+                label: Subtitle
+                type: text
+              - name: imageUrl
+                label: Logo
+                type: image
+                options:
+                  media: logo
+              - name: buttons
+                label: Buttons
+                type: object
+                list: true
+                fields:
+                  - name: name
+                    label: Label
+                    type: string
+                  - name: url
+                    label: Link
+                    type: string
+  - name: photos
+    label: Photos page
+    type: file
+    path: content/photos.md
+    format: yaml-frontmatter
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: description
+        label: Description
+        type: string
