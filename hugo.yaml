@@ -41,3 +41,22 @@ markup:
   goldmark:
     unsafe: false
     renderer:
+
+module:
+  mounts:
+    - source: content
+      target: content
+    - source: data
+      target: data
+    - source: layouts
+      target: layouts
+    - source: i18n
+      target: i18n
+    - source: archetypes
+      target: archetypes
+    - source: assets
+      target: assets
+    - source: static
+      target: static
+    - source: static/img/photos
+      target: assets/photos
