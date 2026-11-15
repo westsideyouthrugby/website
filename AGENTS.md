@@ -10,6 +10,7 @@
 
 - `hugo server` — local dev server at localhost:1313
 - `hugo --minify` — production build to `public/`
+- `prek run --all-files` — lint (yamllint, whitespace, YAML checks); CI runs this before the build, and `pre-commit run --all-files` works if `prek` is not installed
 
 ## Content Structure
 
@@ -42,4 +43,5 @@ The site logo is `static/img/logo.png`.
 
 1. Run `hugo server` and open `http://localhost:1313/`
 2. Verify: logo centered, title displayed, subtitle with contact link, Rugby Oregon button links to rugbyoregon.com, Photos button opens `/photos/`
-3. Run `hugo --minify` to confirm production build succeeds with no errors
+3. Run `prek run --all-files` to confirm lint passes
+4. Run `hugo --minify` to confirm production build succeeds with no errors
